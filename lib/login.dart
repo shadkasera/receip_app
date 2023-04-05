@@ -38,7 +38,8 @@ class LogInPage extends StatelessWidget {
                     decoration: BoxDecoration(
                       color: Colors.grey[400],
                       border: Border.all(
-                        color: Colors.black,width: 1.0,
+                        color: Colors.black,
+                        width: 1.0,
                       ),
                       borderRadius: BorderRadius.circular(8),
                     ),
@@ -55,7 +56,7 @@ class LogInPage extends StatelessWidget {
                 ),
                 //password text field
                 const SizedBox(
-                  height: 30,
+                  height: 80,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -82,7 +83,7 @@ class LogInPage extends StatelessWidget {
                 ),
                 //sign in
                 const SizedBox(
-                  height: 30,
+                  height: 80,
                 ),
 
                 Padding(
@@ -124,11 +125,11 @@ class LogInPage extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 40),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
+                    children: const [
                       Text(
                         '  Forgot Password?',
                         style: TextStyle(
-                          color: Colors.green[700],
+                          color: Colors.black,
                           fontWeight: FontWeight.bold,
                         ),
                       )
