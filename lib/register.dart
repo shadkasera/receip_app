@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:receip_app/homescreen.dart';
+import 'package:receip_app/login.dart';
 import 'package:receip_app/welcome.dart';
 
 class RegisterScreen extends StatelessWidget {
@@ -40,7 +41,7 @@ class RegisterScreen extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const WelcomeScreen(),
+                              builder: (context) => const LogInPage(),
                             ),
                           );
                         },
@@ -72,7 +73,7 @@ class RegisterScreen extends StatelessWidget {
                       child: TextField(
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Enter your Email',
+                          hintText: 'Enter your Full Name',
                         ),
                       ),
                     ),
@@ -80,7 +81,32 @@ class RegisterScreen extends StatelessWidget {
                 ),
                 //password text field
                 const SizedBox(
-                  height: 80,
+                  height: 50,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 20),
+                      child: TextField(
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Enter your Email',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 50,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -105,9 +131,35 @@ class RegisterScreen extends StatelessWidget {
                     ),
                   ),
                 ),
+                const SizedBox(
+                  height: 50,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 25),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[400],
+                      border: Border.all(
+                        color: Colors.black,
+                        width: 1.0,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 20),
+                      child: TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          border: InputBorder.none,
+                          hintText: 'Confirm your Password',
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
                 //sign in
                 const SizedBox(
-                  height: 80,
+                  height: 50,
                 ),
 
                 Padding(
@@ -117,7 +169,7 @@ class RegisterScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const HomeScreen(),
+                          builder: (context) => const LogInPage(),
                         ),
                       );
                     },
@@ -129,7 +181,7 @@ class RegisterScreen extends StatelessWidget {
                           border: Border.all(color: Colors.black, width: 1.5)),
                       child: const Center(
                         child: Text(
-                          'LOG IN',
+                          'CREATE ACCOUNT',
                           style: TextStyle(
                             color: Colors.black,
                             fontWeight: FontWeight.bold,
@@ -145,21 +197,6 @@ class RegisterScreen extends StatelessWidget {
                 ),
 
                 //register
-                Padding(
-                  padding: const EdgeInsets.only(right: 40),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: const [
-                      Text(
-                        '  Forgot Password?',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      )
-                    ],
-                  ),
-                )
               ],
             ),
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:receip_app/homescreen.dart';
+import 'package:receip_app/register.dart';
 import 'package:receip_app/welcome.dart';
 
 class LogInPage extends StatelessWidget {
@@ -190,7 +191,7 @@ class LogInPage extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const HomeScreen(),
+                              builder: (context) => const RegisterScreen(),
                             ),
                           );
                         },
