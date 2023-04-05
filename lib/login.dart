@@ -149,17 +149,73 @@ class LogInPage extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 40),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
-                    children: const [
-                      Text(
-                        '  Forgot Password?',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
+                    children:  [
+                      GestureDetector(onTap: () {
+
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const HomeScreen(),
+                        ),
+                      );
+                      },
+                        child: const Text(
+                          '  Forgot Password?',
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
+                          ),
                         ),
                       )
                     ],
                   ),
-                )
+                ),
+                const SizedBox(
+                  height: 50,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    const Padding(
+                      padding: EdgeInsets.all(10.0),
+                      child: Text(
+                        'NEW?',
+                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const HomeScreen(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          padding: const EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+                              color: const Color.fromRGBO(18, 195, 208, 1),
+                              borderRadius: BorderRadius.circular(8),
+                              border:
+                                  Border.all(color: Colors.black, width: 1.5)),
+                          child: const Center(
+                            child: Text(
+                              'CREATE ACCOUNT',
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 20,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
