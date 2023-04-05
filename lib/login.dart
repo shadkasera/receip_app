@@ -34,15 +34,16 @@ class LogInPage extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 10),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
-                    children:  [
-                      GestureDetector(onTap: () {
-                        Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const WelcomeScreen(),
-                        ),
-                      );
-                      },
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const WelcomeScreen(),
+                            ),
+                          );
+                        },
                         child: const Icon(
                           Icons.arrow_back_ios_new,
                         ),
@@ -98,7 +99,7 @@ class LogInPage extends StatelessWidget {
                         obscureText: true,
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: 'Enter Password',
+                          hintText: 'Enter your Password',
                         ),
                       ),
                     ),
