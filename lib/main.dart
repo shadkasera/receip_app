@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:receip_app/login.dart';
-import 'package:receip_app/welcome.dart';
 
+import 'package:receip_app/welcome.dart';
 
 void main() {
   runApp(const MyApp());

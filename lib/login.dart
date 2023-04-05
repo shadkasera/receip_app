@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:receip_app/homescreen.dart';
+import 'package:receip_app/welcome.dart';
 
 class LogInPage extends StatelessWidget {
   const LogInPage({super.key});
@@ -26,7 +27,29 @@ class LogInPage extends StatelessWidget {
                     ),
                   ),
                 ),
-
+                const SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 10),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children:  [
+                      GestureDetector(onTap: () {
+                        Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const WelcomeScreen(),
+                        ),
+                      );
+                      },
+                        child: const Icon(
+                          Icons.arrow_back_ios_new,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
                 const SizedBox(
                   height: 100,
                 ),
