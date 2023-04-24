@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'login.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -27,9 +29,18 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Icon(Icons.arrow_back),
-                    Icon(Icons.arrow_forward),
+                  children:  [
+                    GestureDetector(onTap: () {
+                       Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const LogInPage(),
+                        ),
+                      );
+                      
+                    },
+                      child: const Icon(Icons.arrow_back)),
+                    const Icon(Icons.arrow_forward),
                   ],
                 ),
               ),

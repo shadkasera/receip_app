@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:receip_app/homescreen.dart';
-import 'package:receip_app/hope_page.dart';
 import 'package:receip_app/landing_screen.dart';
 import 'package:receip_app/register.dart';
 import 'package:receip_app/welcome.dart';
@@ -48,7 +46,7 @@ class LogInPage extends StatelessWidget {
                           );
                         },
                         child: const Icon(
-                          Icons.arrow_back_ios_new,
+                          Icons.arrow_back,
                         ),
                       ),
                     ],
