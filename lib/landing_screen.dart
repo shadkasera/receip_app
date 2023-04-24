@@ -15,7 +15,7 @@ class _LandingScreenState extends State<LandingScreen> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    FavoritesPage(),
+    FavouritesPage(),
     ProfilePage(),
   ];
 
