@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:receip_app/homescreen.dart';
+import 'package:receip_app/hope_page.dart';
 import 'package:receip_app/register.dart';
 import 'package:receip_app/welcome.dart';
 
@@ -118,7 +119,7 @@ class LogInPage extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => const HomeScreen(),
+                          builder: (context) => const HomePage(),
                         ),
                       );
                     },
@@ -153,12 +154,12 @@ class LogInPage extends StatelessWidget {
                     children:  [
                       GestureDetector(onTap: () {
 
-                        Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const HomeScreen(),
-                        ),
-                      );
+                      //   Navigator.push(
+                      //   context,
+                      //   MaterialPageRoute(
+                      //     builder: (context) => const HomePage(),
+                      //   ),
+                      // );
                       },
                         child: const Text(
                           '  Forgot Password?',
