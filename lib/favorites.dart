@@ -45,7 +45,7 @@ class FavouritesPage extends StatelessWidget {
                 height: 10,
               ),
               //another
-               Padding(
+              Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -86,55 +86,19 @@ class FavouritesPage extends StatelessWidget {
                         ],
                       ),
                     ),
-                     Padding(
+                    Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       child: Column(
                         children: [
                           const Padding(
                             padding: EdgeInsets.symmetric(vertical: 10),
                             child: Text(
-                              'Pizza',
+                              'Noodles',
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
                           Image.asset(
-                            'assets/images/pizza1.png',
-                            height: 70,
-                          ),
-                        ],
-                      ),
-                    ),
-                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                      child: Column(
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.symmetric(vertical: 10),
-                            child: Text(
-                              'Pizza',
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
-                          Image.asset(
-                            'assets/images/pizza1.png',
-                            height: 70,
-                          ),
-                        ],
-                      ),
-                    ),
-                     Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
-                      child: Column(
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.symmetric(vertical: 10),
-                            child: Text(
-                              'Pizza',
-                              style: TextStyle(fontSize: 18),
-                            ),
-                          ),
-                          Image.asset(
-                            'assets/images/pizza1.png',
+                            'assets/images/noodles1.png',
                             height: 70,
                           ),
                         ],
@@ -143,7 +107,6 @@ class FavouritesPage extends StatelessWidget {
                   ],
                 ),
               ),
-             
             ],
           ),
         ),

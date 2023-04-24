@@ -32,6 +32,7 @@ class _LandingScreenState extends State<LandingScreen> {
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor:  const Color.fromRGBO(18, 195, 208, 1),
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -47,7 +48,7 @@ class _LandingScreenState extends State<LandingScreen> {
           ),
         ],
         currentIndex: _selectedIndex,
-        selectedItemColor: const Color(0xff3786ea),
+        selectedItemColor: Colors.white,
         onTap: _onItemTapped,
       ),
     );
