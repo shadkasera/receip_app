@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:receip_app/homescreen.dart';
 import 'package:receip_app/hope_page.dart';
 import 'package:receip_app/register.dart';
 import 'package:receip_app/welcome.dart';
@@ -82,7 +81,7 @@ class LogInPage extends StatelessWidget {
                 ),
                 //password text field
                 const SizedBox(
-                  height: 80,
+                  height: 20,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 25),
@@ -109,7 +108,7 @@ class LogInPage extends StatelessWidget {
                 ),
                 //sign in
                 const SizedBox(
-                  height: 80,
+                  height: 20,
                 ),
 
                 Padding(
@@ -124,7 +123,7 @@ class LogInPage extends StatelessWidget {
                       );
                     },
                     child: Container(
-                      padding: const EdgeInsets.all(20),
+                      padding: const EdgeInsets.all(15),
                       decoration: BoxDecoration(
                           color: const Color.fromRGBO(18, 195, 208, 1),
                           borderRadius: BorderRadius.circular(8),
@@ -143,7 +142,7 @@ class LogInPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  height: 10,
+                  height: 5,
                 ),
 
                 //register
@@ -197,7 +196,7 @@ class LogInPage extends StatelessWidget {
                           );
                         },
                         child: Container(
-                          padding: const EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(15),
                           decoration: BoxDecoration(
                               color: const Color.fromRGBO(18, 195, 208, 1),
                               borderRadius: BorderRadius.circular(8),

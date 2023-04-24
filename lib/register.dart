@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:receip_app/homescreen.dart';
 import 'package:receip_app/login.dart';
-import 'package:receip_app/welcome.dart';
 
 class RegisterScreen extends StatelessWidget {
   const RegisterScreen({super.key});
