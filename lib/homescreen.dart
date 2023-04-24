@@ -100,9 +100,10 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               //another
-               
+              
+
               //another
-               const SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Padding(
@@ -150,7 +151,7 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               //another
-               const SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               Padding(
@@ -198,7 +199,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               //another
-              
             ],
           ),
         ),
