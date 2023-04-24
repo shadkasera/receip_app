@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:receip_app/landing_screen.dart';
 
-import '../homescreen.dart';
 
 class CakeIngredients extends StatelessWidget {
   const CakeIngredients({super.key});
@@ -39,7 +39,7 @@ class CakeIngredients extends StatelessWidget {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => const HomeScreen(),
+                              builder: (context) => const LandingScreen(),
                             ),
                           );
                         },

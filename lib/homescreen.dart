@@ -110,9 +110,18 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          Image.asset(
-                            'assets/images/pizza1.png',
-                            height: 70,
+                          GestureDetector(onTap: () {   Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CakeIngredients(),
+                        ),
+                      );
+                            
+                          },
+                            child: Image.asset(
+                              'assets/images/pizza1.png',
+                              height: 70,
+                            ),
                           ),
                         ],
                       ),
@@ -143,9 +152,18 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          Image.asset(
-                            'assets/images/noodles1.png',
-                            height: 70,
+                          GestureDetector(onTap: () {
+                               Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CakeIngredients(),
+                        ),
+                      );
+                          },
+                            child: Image.asset(
+                              'assets/images/noodles1.png',
+                              height: 70,
+                            ),
                           ),
                         ],
                       ),
@@ -161,9 +179,18 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          Image.asset(
-                            'assets/images/chips.jpg',
-                            height: 70,
+                          GestureDetector(onTap: () {
+                               Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CakeIngredients(),
+                        ),
+                      );
+                          },
+                            child: Image.asset(
+                              'assets/images/chips.jpg',
+                              height: 70,
+                            ),
                           ),
                         ],
                       ),
@@ -191,9 +218,18 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          Image.asset(
-                            'assets/images/beef1.png',
-                            height: 70,
+                          GestureDetector(onTap: () {
+                               Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CakeIngredients(),
+                        ),
+                      );
+                          },
+                            child: Image.asset(
+                              'assets/images/beef1.png',
+                              height: 70,
+                            ),
                           ),
                         ],
                       ),
@@ -209,9 +245,18 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          Image.asset(
-                            'assets/images/chicken.jpeg',
-                            height: 70,
+                          GestureDetector(onTap: () {
+                               Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CakeIngredients(),
+                        ),
+                      );
+                          },
+                            child: Image.asset(
+                              'assets/images/chicken.jpeg',
+                              height: 70,
+                            ),
                           ),
                         ],
                       ),
