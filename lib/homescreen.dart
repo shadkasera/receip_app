@@ -30,17 +30,17 @@ class HomeScreen extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children:  [
-                    GestureDetector(onTap: () {
-                       Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const LogInPage(),
-                        ),
-                      );
-                      
-                    },
-                      child: const Icon(Icons.arrow_back)),
+                  children: [
+                    GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const LogInPage(),
+                            ),
+                          );
+                        },
+                        child: const Icon(Icons.arrow_back)),
                     const Icon(Icons.arrow_forward),
                   ],
                 ),
@@ -83,14 +83,15 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          GestureDetector(onTap: () {
-                             Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const CakeIngredients(),
-                        ),
-                      );
-                          },
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const CakeIngredients(),
+                                ),
+                              );
+                            },
                             child: Image.asset(
                               'assets/images/cake.jpeg',
                               height: 70,
@@ -110,14 +111,15 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          GestureDetector(onTap: () {   Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const CakeIngredients(),
-                        ),
-                      );
-                            
-                          },
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const CakeIngredients(),
+                                ),
+                              );
+                            },
                             child: Image.asset(
                               'assets/images/pizza1.png',
                               height: 70,
@@ -130,7 +132,6 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
               //another
-              
 
               //another
               const SizedBox(
@@ -152,14 +153,15 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          GestureDetector(onTap: () {
-                               Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const CakeIngredients(),
-                        ),
-                      );
-                          },
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const CakeIngredients(),
+                                ),
+                              );
+                            },
                             child: Image.asset(
                               'assets/images/noodles1.png',
                               height: 70,
@@ -179,14 +181,15 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          GestureDetector(onTap: () {
-                               Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const CakeIngredients(),
-                        ),
-                      );
-                          },
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const CakeIngredients(),
+                                ),
+                              );
+                            },
                             child: Image.asset(
                               'assets/images/chips.jpg',
                               height: 70,
@@ -218,14 +221,15 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          GestureDetector(onTap: () {
-                               Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const CakeIngredients(),
-                        ),
-                      );
-                          },
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const CakeIngredients(),
+                                ),
+                              );
+                            },
                             child: Image.asset(
                               'assets/images/beef1.png',
                               height: 70,
@@ -245,14 +249,15 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          GestureDetector(onTap: () {
-                               Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const CakeIngredients(),
-                        ),
-                      );
-                          },
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const CakeIngredients(),
+                                ),
+                              );
+                            },
                             child: Image.asset(
                               'assets/images/chicken.jpeg',
                               height: 70,
