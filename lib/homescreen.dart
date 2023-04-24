@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:receip_app/pages/cake_ingredients.dart';
 
 import 'login.dart';
 
@@ -82,9 +83,18 @@ class HomeScreen extends StatelessWidget {
                               style: TextStyle(fontSize: 18),
                             ),
                           ),
-                          Image.asset(
-                            'assets/images/cake.jpeg',
-                            height: 70,
+                          GestureDetector(onTap: () {
+                             Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const CakeIngredients(),
+                        ),
+                      );
+                          },
+                            child: Image.asset(
+                              'assets/images/cake.jpeg',
+                              height: 70,
+                            ),
                           ),
                         ],
                       ),
