@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:receip_app/homescreen.dart';
+import 'package:receip_app/profile.dart';
 
-
+import 'favorites.dart';
 
 class LandingScreen extends StatefulWidget {
   const LandingScreen({super.key});
@@ -12,18 +13,10 @@ class LandingScreen extends StatefulWidget {
 
 class _LandingScreenState extends State<LandingScreen> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-   HomeScreen(),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
+    HomeScreen(),
+    FavoritesPage(),
+    ProfilePage(),
   ];
 
   void _onItemTapped(int index) {
@@ -45,12 +38,12 @@ class _LandingScreenState extends State<LandingScreen> {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Business',
+            icon: Icon(Icons.favorite_outline),
+            label: 'Favourites',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.school),
-            label: 'School',
+            icon: Icon(Icons.person),
+            label: 'Profile',
           ),
         ],
         currentIndex: _selectedIndex,
