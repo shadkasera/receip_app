@@ -80,12 +80,12 @@ class WelcomeScreen extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: const Color.fromRGBO(18, 195, 208, 1),
                           borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: Colors.black, width: 1.5)),
+                          border: Border.all(color: Colors.black, width: 0.2)),
                       child: const Center(
                         child: Text(
                           'GET STARTED',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
