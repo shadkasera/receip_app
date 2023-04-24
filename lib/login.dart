@@ -64,7 +64,7 @@ class LogInPage extends StatelessWidget {
                       color: Colors.grey[400],
                       border: Border.all(
                         color: Colors.black,
-                        width: 1.0,
+                        width: 0.2,
                       ),
                       borderRadius: BorderRadius.circular(8),
                     ),
@@ -90,7 +90,7 @@ class LogInPage extends StatelessWidget {
                       color: Colors.grey[400],
                       border: Border.all(
                         color: Colors.black,
-                        width: 1.0,
+                        width: 0.2,
                       ),
                       borderRadius: BorderRadius.circular(8),
                     ),
@@ -125,14 +125,15 @@ class LogInPage extends StatelessWidget {
                     child: Container(
                       padding: const EdgeInsets.all(15),
                       decoration: BoxDecoration(
-                          color: const Color.fromRGBO(18, 195, 208, 1),
-                          borderRadius: BorderRadius.circular(8),
-                          border: Border.all(color: Colors.black, width: 1.5)),
+                        color: const Color.fromRGBO(18, 195, 208, 1),
+                        borderRadius: BorderRadius.circular(8),
+                        border: Border.all(color: Colors.black, width: 0.2),
+                      ),
                       child: const Center(
                         child: Text(
                           'LOG IN',
                           style: TextStyle(
-                            color: Colors.black,
+                            color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
@@ -150,16 +151,16 @@ class LogInPage extends StatelessWidget {
                   padding: const EdgeInsets.only(right: 40),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.end,
-                    children:  [
-                      GestureDetector(onTap: () {
-
-                      //   Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => const HomePage(),
-                      //   ),
-                      // );
-                      },
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          //   Navigator.push(
+                          //   context,
+                          //   MaterialPageRoute(
+                          //     builder: (context) => const HomePage(),
+                          //   ),
+                          // );
+                        },
                         child: const Text(
                           '  Forgot Password?',
                           style: TextStyle(
@@ -181,7 +182,8 @@ class LogInPage extends StatelessWidget {
                       padding: EdgeInsets.all(10.0),
                       child: Text(
                         'NEW?',
-                        style: TextStyle(fontWeight: FontWeight.bold,fontSize: 17),
+                        style: TextStyle(
+                            fontWeight: FontWeight.bold, fontSize: 17),
                       ),
                     ),
                     Padding(
@@ -198,15 +200,15 @@ class LogInPage extends StatelessWidget {
                         child: Container(
                           padding: const EdgeInsets.all(15),
                           decoration: BoxDecoration(
-                              color: const Color.fromRGBO(18, 195, 208, 1),
-                              borderRadius: BorderRadius.circular(8),
-                              border:
-                                  Border.all(color: Colors.black, width: 1.5)),
+                            color: const Color.fromRGBO(18, 195, 208, 1),
+                            borderRadius: BorderRadius.circular(8),
+                            border: Border.all(color: Colors.black, width: 0.2),
+                          ),
                           child: const Center(
                             child: Text(
                               'CREATE ACCOUNT',
                               style: TextStyle(
-                                color: Colors.black,
+                                color: Colors.white,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 20,
                               ),
