@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:receip_app/homescreen.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -34,8 +35,16 @@ class ProfilePage extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Icon(Icons.arrow_back),
+                  children:  [
+                    GestureDetector(onTap: () {
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const HomeScreen(),
+                            ),
+                          );
+                    },
+                      child: Icon(Icons.arrow_back)),
                     Icon(Icons.arrow_forward),
                   ],
                 ),
