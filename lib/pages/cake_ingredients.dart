@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:receip_app/landing_screen.dart';
 
-
 class CakeIngredients extends StatelessWidget {
   const CakeIngredients({super.key});
 
@@ -67,7 +66,42 @@ class CakeIngredients extends StatelessWidget {
                       ),
                       Image.asset(
                         'assets/images/cake.jpeg',
-                        height: 70,
+                        height: 200,
+                        width: 300,
+                      ),
+                      Column(
+                        children: const [
+                          Text(
+                            'Ingredients',
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold),
+                          ),
+                          Text(
+                            'Floor',
+                            style: TextStyle(
+                                fontSize: 18, ),
+                          ),
+                          Text(
+                            'Baaking powder',
+                            style: TextStyle(
+                                fontSize: 18, ),
+                          ),
+                          Text(
+                            'Baking soda',
+                            style: TextStyle(
+                                fontSize: 18, ),
+                          ),
+                          Text(
+                            'Salt',
+                            style: TextStyle(
+                                fontSize: 18, ),
+                          ),
+                          Text(
+                            'Floor',
+                            style: TextStyle(
+                                fontSize: 18, ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
